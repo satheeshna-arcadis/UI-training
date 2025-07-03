@@ -17,7 +17,6 @@ body {
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
   padding: 40px 32px 32px 32px;
   width: 350px;
-  max-width: 95vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -45,7 +44,7 @@ body {
 }
 .brand-title {
   margin: 0;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 700;
   font-style: italic;
   text-align: left;
@@ -115,29 +114,24 @@ input[type="email"], input[type="password"] {
   background: #ef4444;
 }
 .separator {
-  margin: 20px 0 16px 0;
-  text-align: center;
-  color: #bbb;
-  font-size: 15px;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0; 
 }
-.separator span {
-  background: #fff;
-  padding: 0 16px;
-  position: relative;
-  z-index: 1;
+
+.line {
+  flex-grow: 1;
+  height: 1px; 
+  background-color: #7e7b7b; 
+  margin: 0 10px;
 }
-.separator:before, .separator:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 40%;
-  height: 1px;
-  background: #eee;
-  
+
+.text {
+  color: #9d9898; 
 }
-.separator:before { margin-right: 12px; }
-.separator:after { margin-left: 12px; }
+
 .social-login {
   margin-top: 16px;
   margin-bottom: 16px;
