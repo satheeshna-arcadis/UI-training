@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+  <div class="login-box">
+    <div class="logo-row">
+      <div class="logo-placeholder">
+        <span class="logo-icon"><i class="fa-solid fa-location-dot"></i></span>
+      </div>
+      <div>
+        <h1 class="brand-title">HotSpot</h1>
+        <p class="brand-subtitle">Parking Transit Taxis</p>
+      </div>
+    </div>
+    <h2>Login into your Account</h2>
+    <form>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+      <label for="password">Password</label>
+      <div class="password-wrapper">
+        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+      </div>
+      <div class="options-row">
+        <label class="remember-me">
+          <input type="checkbox" id="remember" name="remember">
+          Remember me
+        </label>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+      </div>
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+    <div class="separator"><span>or</span></div>
+    <div class="social-login">
+      <button class="social-btn google">
+        <img src="/google_logo.jpg" alt="Google Logo"> Sign in with Google
+      </button>
+      <button class="social-btn apple">
+        <i class="fa-brands fa-apple"></i> Sign in with Apple
+      </button>
+      <button class="social-btn microsoft">
+        <img src="/microsoft_logo.png" alt="Microsoft Logo"> Sign in with Microsoft
+      </button>
+    </div>
+    <footer>
+      <div class="new-user">
+        <p>New User? <a href="#" class="inline-link">Click Here</a></p>
+        <p class="park-link">Want to park your customers and employees? <a href="#" class="inline-link">Click Here</a></p>
+      </div>
+    </footer>
+  </div>
+</div>
+</body>
