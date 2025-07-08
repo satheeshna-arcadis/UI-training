@@ -25,7 +25,6 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
-  text-align: left;
 }
 .logo-placeholder {
   width: 48px;
@@ -47,20 +46,17 @@ body {
   font-size: 20px;
   font-weight: 700;
   font-style: italic;
-  text-align: left;
 }
 .brand-subtitle {
   margin: 0;
   font-size: 16px;
   color: #f87171;
   font-weight: 500;
-  text-align: left;
 }
 h2 {
   margin: 0 0 24px 0;
   font-size: 18px;
   font-weight: 600;
-  text-align: left;
 }
 form label {
   display: block;
@@ -68,7 +64,6 @@ form label {
   color: #111;
   font-size: 16px;
   font-weight: 500;
-  text-align: left;
 }
 input[type="email"], input[type="password"] {
   width: 100%;
