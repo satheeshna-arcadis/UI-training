@@ -29,8 +29,9 @@ nav {
   padding: 16px;
   border-radius: 8px;
   height: 480px;
-  overflow-y: auto;
   margin-right: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 nav h3 {
@@ -39,6 +40,7 @@ nav h3 {
 
 nav ul {
   list-style: none;
+  overflow-y: auto ;
 }
 
 nav li {
