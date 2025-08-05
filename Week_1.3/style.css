@@ -2,115 +2,80 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  font-family: Arial, sans-serif;
 }
 
-header, footer {
-  padding: 24px;
+header,
+footer {
   background-color: #566573;
-  text-align: center;
-  border-radius: 8px;
+  padding: 20px;
+  border: 2px solid black;
 }
+
 .container {
+  flex: 1;
   display: flex;
-  flex-grow: 1;
-  padding: 8px;
-  gap: 8px;
-}
-
-nav {
-  background-color: #cf6ef2;
-  padding: 16px;
-  flex-basis: 240px;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav li {
-  padding: 10px;
-  background-color: #d996eb;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-
-nav li:hover {
-  background-color: #9c22c5;
 }
 
 .right-content {
-  flex-grow: 3;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  order: 2;
+  flex: 1;
+  background-color: #aface3;
+  min-height: 100px;
+  border: 1px solid black;
+
 }
 
 .main-content {
-  flex-grow: 2;
+  flex: 2;
   background-color: #9b59b6;
-  color: #fff;
-  border-radius: 8px;
-  padding: 16px;
+  min-height: 100px;
+  border: 1px solid black;
+  
 }
 
-.extra-row {
-  display: flex;
-  gap: 8px;
-  flex-grow: 1;
-}
-
-.related, .call-to-action {
+.related {
   flex: 1;
   background-color: #71b7b7;
-  color: #fff;
-  padding: 16px;
-  border-radius: 8px;
+  min-height: 100px;
+  border: 1px solid black;
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     flex-wrap: wrap;
   }
 
-  nav {
-    flex-basis: 45%;
+  .right-content {
     order: 1;
+    flex: 1 1 50%;
   }
 
-  .right-content {
-    flex-basis: 50%;
+  .related {
     order: 2;
+    flex: 1 1 50%;
+  }
+
+  .main-content {
+    order: 3;
+    flex: 1 1 100%;
   }
 }
- 
 
-@media (max-width: 360px) {
+@media screen and (max-width: 360px) {
   .container {
     flex-direction: column;
   }
 
-  nav {
-    flex-basis: 100%;
-    order: 1;
-    max-height: 200px;
-  }
-
-  .right-content {
-    order: 2;
+  .right-content,
+  .main-content,
+  .related {
+    order: unset;
+    flex: 1 1 100%;
   }
 }
