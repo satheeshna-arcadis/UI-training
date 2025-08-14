@@ -45,7 +45,6 @@ footer {
   border: 1px solid black;
 }
 
-
 @media screen and (max-width: 768px) {
   .container {
     flex-wrap: wrap;
@@ -53,20 +52,19 @@ footer {
 
   .right-content {
     order: 1;
-    flex: 1 1 50%;
+    flex: 1;
   }
 
   .related {
     order: 2;
-    flex: 1 1 50%;
+    flex: 1;
   }
 
   .main-content {
     order: 3;
-    flex: 1 1 100%;
+    flex: 1;
   }
 }
-
 @media screen and (max-width: 360px) {
   .container {
     flex-direction: column;
@@ -76,6 +74,7 @@ footer {
   .main-content,
   .related {
     order: unset;
-    flex: 1 1 100%;
+    flex: 1;
   }
 }
+
