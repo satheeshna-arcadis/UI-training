@@ -8,108 +8,154 @@
   <link rel="stylesheet" href="index.css">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body>
-<nav class="navbar fixed-top ">
+<body class="d-flex flex-column vh-100">
   <div class="container-fluid">
-    <div class="d-flex justify-content-between align-items-center w-100">
-      <span class="navbar-brand">Microsoft 365</span>
-      <div class="flex-grow-1 mx-2 d-none d-sm-block">
-        <div class="input-group">
-          <span class="input-group-text"><i data-lucide="search"></i></span>
-          <input type="text" class="form-control" placeholder="Search" />
+    <div class="row flex-nowrap ">
+      <!-- Sidebar -->
+    <div class="sidebar col-auto d-flex flex-column align-items-center p-2 ">
+        <div class=" sidebar-item d-flex flex-column hover-effect align-items-center my-2"><i data-lucide="grid" class="fs-5"></i><small>All apps</small></div>
+        <div class="sidebar-item d-flex flex-column hover-effect align-items-center my-2"><i data-lucide="home" class="fs-5"></i><small>Home</small></div>
+        <div class="sidebar-item d-flex flex-column hover-effect align-items-center my-2"><i data-lucide="plus-circle" class="fs-5"></i><small>Create</small></div>
+        <div class="sidebar-item d-flex flex-column hover-effect align-items-center my-2"><i data-lucide="folder" class="fs-5"></i><small>My Files</small></div>
+        <div class="sidebar-item d-flex flex-column hover-effect align-items-center my-3"><img src="https://img.icons8.com/color/48/new-post.png" alt="Outlook" class="img-fluid" style="width:24px;"><small>Outlook</small></div>
+        <div class="sidebar-item d-flex flex-column hover-effect align-items-center my-3"><img src="https://img.icons8.com/color/48/microsoft-teams.png" alt="Teams" class="img-fluid" style="width:24px;"><small>Teams</small></div>
+        <div class="sidebar-item d-flex flex-column hover-effect align-items-center my-3"><img src="https://img.icons8.com/color/48/ms-word.png" alt="Word" class="img-fluid" style="width:24px;"><small>Word</small></div>
+        <div class="sidebar-item d-flex flex-column hover-effect align-items-center my-3"><img src="https://img.icons8.com/color/48/ms-excel.png" alt="Excel" class="img-fluid" style="width:24px;"> <small>Excel</small></div>
+        <div class="sidebar-item d-flex flex-column hover-effect align-items-center my-3"><img src="https://img.icons8.com/color/48/ms-powerpoint.png" alt="PowerPoint" class="img-fluid" style="width:24px;"><small>PowerPoint</small></div>
+        <div class="sidebar-item d-flex flex-column hover-effect align-items-center my-3"><img src="https://img.icons8.com/?size=100&id=PnENrLMMW4eV&format=png" alt="OneDrive" class="img-fluid" style="width:24px;"><small>OneDrive</small></div>
+        <div class="sidebar-item d-flex flex-column hover-effect align-items-center my-3"><img src="https://img.icons8.com/?size=100&id=JNZqbHmBWZLU&format=png" alt="OneNote" class="img-fluid" style="width:24px;"><small>OneNote</small></div>
+        <div class="sidebar-item d-flex flex-column hover-effect align-items-center my-3"><i data-lucide="more-horizontal" class="fs-5"></i><small>More</small></div>
+    </div>
+      <!-- Main area -->
+    <div class="col p-0 d-flex flex-column" style="margin-left: 100px;" >
+        <!-- Topbar -->
+        <nav class="navbar  bg-light">
+          <div class="container-fluid ">
+            <div class="row g-0 w-100 align-items-center flex-nowrap">
+            <!-- Brand -->
+            <div class="col-auto"><a class="navbar-brand text-danger fs-5">Microsoft 365</a></div>
+            <!-- Search -->
+            <div class="d-none d-md-block col-md-6 col-lg-8">
+              <div class="input-group"><span class="input-group-text"><i data-lucide="search" class="fs-5"></i></span><input type="text" class="form-control" placeholder="Search"></div>
+            </div>
+            <div class="col-auto d-md-none me-3"><i data-lucide="search" class="fs-5"></i></div>
+            <!-- Right icons -->
+            <div class="col-auto d-flex gap-3 ms-auto">
+              <i data-lucide="calendar-check-2" class="fs-5"></i>
+              <i data-lucide="settings" class="fs-5"></i>
+              <i data-lucide="help-circle" class="fs-5"></i>
+              <i data-lucide="user" class="fs-5"></i>
+            </div>
+          </div>
+        </nav>
+         <!-- Info Banner -->
+        <div class="container-fluid px-0 ">
+        <div class="info-banner d-flex align-items-center justify-content-between py-4 px-3">
+          <div class="d-flex align-items-center gap-2 flex-grow-1">
+            <img src="https://img.icons8.com/color/32/microsoft-office-2019.png" alt="Office" />
+            <i data-lucide="arrow-right"></i>
+            <img src="https://img.icons8.com/?size=100&id=g7UKWvv49CoI&format=png&color=000000" alt="Microsoft 365" />
+            <span class="info-text ms-3 flex-grow-1">The Office app is becoming the new Microsoft 365 app, your home to find, create, and share your content and ideas. 
+              <a href="#" class="learn-more text-decoration-underline">Learn more</a>
+            </span>
+            <button class="btn-close" aria-label="Close"></button>
+            </div>
         </div>
-      </div>
-      <div class="d-block d-sm-none me-2">
-        <i data-lucide="search"></i>
-      </div>
-      <div class="d-flex align-items-center gap-3">
-        <i data-lucide="calendar-check-2"></i>
-        <i data-lucide="settings"></i>
-        <i data-lucide="help-circle"></i>
-        <i data-lucide="user"></i>
-      </div>
     </div>
-  </div>
-</nav>
-<div class="info-banner d-flex align-items-center justify-content-between">
-  <div class="d-flex align-items-center gap-2">
-    <img src="https://img.icons8.com/color/32/microsoft-office-2019.png" alt="Office" />
-    <i data-lucide="arrow-right"></i>
-    <img src="https://img.icons8.com/?size=100&id=g7UKWvv49CoI&format=png&color=000000" alt="Microsoft 365" />
-    <span>
-      The Office app is becoming the new Microsoft 365 app, your home to find, create, and share your content and ideas. 
-      <a href="#" class="learn-more">Learn more</a>
-    </span>
-  </div>
-  <button class="btn-close" aria-label="Close"></button>
-</div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-auto p-0">
-        <aside class="sidebar  vh-100 p-2">
-          <div class="icon hover-effect"><i data-lucide="grid"></i><div>All apps</div></div>
-          <div class="icon hover-effect"><i data-lucide="home"></i><div>Home</div></div>
-          <div class="icon hover-effect"><i data-lucide="plus-circle"></i><div>Create</div></div>
-          <div class="icon hover-effect"><i data-lucide="folder"></i><div>My Files</div></div>
-          <div class="icon hover-effect"><img src="https://img.icons8.com/color/48/new-post.png" alt="Outlook"><div>Outlook</div></div>
-          <div class="icon hover-effect"><img src="https://img.icons8.com/color/48/microsoft-teams.png" alt="Teams"><div>Teams</div></div>
-          <div class="icon hover-effect"><img src="https://img.icons8.com/color/48/ms-word.png" alt="Word"><div>Word</div></div>
-          <div class="icon hover-effect"><img src="https://img.icons8.com/color/48/ms-excel.png" alt="Excel"><div>Excel</div></div>
-          <div class="icon hover-effect"><img src="https://img.icons8.com/color/48/ms-powerpoint.png" alt="PowerPoint"><div>PowerPoint</div></div>
-          <div class="icon hover-effect"><img src="https://img.icons8.com/?size=100&id=PnENrLMMW4eV&format=png&color=000000" alt="OneDrive"><div>OneDrive</div></div>
-          <div class="icon hover-effect"><img src="https://img.icons8.com/?size=100&id=JNZqbHmBWZLU&format=png&color=000000" alt="OneNote"><div>OneNote</div></div>
-          <div class="icon hover-effect"><i data-lucide="more-horizontal"></i><div>More</div></div>
-        </aside>
-      </div>
-      <div class="col ps-0">
-        <main class="main-content p-4">
-          <h5 class="section-title">Apps</h5>
-          <div class="row mb-4">
-            <div class="col-md-2"><div class="card-app hover-effect "><img src="https://img.icons8.com/color/48/microsoft-teams.png"><div>Teams</div></div></div>
-            <div class="col-md-2"><div class="card-app hover-effect"><img src="https://img.icons8.com/color/48/ms-word.png"><div>Word</div></div></div>
-            <div class="col-md-2"><div class="card-app hover-effect"><img src="https://img.icons8.com/color/48/ms-excel.png"><div>Excel</div></div></div>
-            <div class="col-md-2"><div class="card-app hover-effect"><img src="https://img.icons8.com/color/48/ms-powerpoint.png"><div>PowerPoint</div></div></div>
-            <div class="col-md-2"><div class="card-app hover-effect"><img src="https://img.icons8.com/fluency/48/new-post.png"><div>Outlook</div></div></div>
-            <div class="col-md-2"><div class="card-app hover-effect"><img src="https://img.icons8.com/?size=100&id=PnENrLMMW4eV&format=png&color=000000"><div>OneDrive</div></div></div>
-          </div>
-          <div class="all-apps-link">All apps →</div>
-          <h6 class="section-title">Previously added</h6>
-          <div class="row gx-3 mb-3">
-            <div class="col-md-4"><div class="card-prev hover-effect"><img src="https://img.icons8.com/color/48/source-code.png"><div>App Studio</div></div></div>
-            <div class="col-md-4"><div class="card-prev hover-effect"><img src="https://img.icons8.com/color/48/lock--v1.png"><div>Assignments</div></div></div>
-            <div class="col-md-4"><div class="card-prev hover-effect"><img src="https://img.icons8.com/color/48/ms-excel.png"><div>Excel</div></div></div>
-          </div>
-          <div class="row gx-3 mb-3">
-            <div class="col-md-4"><div class="card-prev hover-effect"><img src="https://img.icons8.com/?size=100&id=qYfwpsRXEcpc&format=png&color=000000"><div>Power BI</div></div></div>
-            <div class="col-md-4"><div class="card-prev hover-effect"><img src="https://img.icons8.com/color/48/ms-powerpoint.png"><div>PowerPoint</div></div></div>
-            <div class="col-md-4"><div class="card-prev hover-effect active"><img src="https://img.icons8.com/?size=100&id=jzaaE6lUq9fx&format=png&color=000000"><div>Task Module Sample →</div></div></div>
-          </div>
-          <div class="row gx-3 mb-4">
-            <div class="col-md-4"><div class="card-prev hover-effect"><img src="https://img.icons8.com/color/48/ms-word.png"><div>Word</div></div></div>
-          </div>
-         <div class="row mt-4 align-items-center">
-  <div class="col-12 col-md-6 mb-3 mb-md-0">
-    <div class="btn-group flex-wrap gap-3" role="group">
-      <button class="btn btn-dark rounded-pill">Productivity</button>
-      <button class="btn btn-outline-dark rounded-pill">Utilities</button>
-      <button class="btn btn-outline-dark rounded-pill">Education</button>
-      <button class="btn btn-outline-dark rounded-pill">4 more</button>
+    <!-- Content -->
+    <main class="main-content p-4">
+    <!-- Apps Section -->
+    <div class="d-flex justify-content-between align-items-center mb-3"><h5 class="section-title mb-0">Apps</h5>
+      <button class="btn btn-danger d-flex align-items-center px-3"><i data-lucide="plus-circle" class="me-1"></i> Add apps</button>
     </div>
-  </div>
-  <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-start flex-wrap gap-2">
-    <button class="btn btn-dark ">
-      <i data-lucide="message-circle"></i> Feedback
-    </button>
-    <button class="btn btn-primary">
-      <i data-lucide="help-circle"></i> Need help?
-    </button>
-  </div>
+    <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2">
+        <div class="card text-center p-3 hover-effect">
+            <img src="https://img.icons8.com/color/48/microsoft-teams.png" class="img-fluid mb-2 mx-auto d-block" alt="Teams"><div>Teams</div>
+        </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+        <div class="card text-center p-3 hover-effect">
+            <img src="https://img.icons8.com/color/48/ms-word.png" class="img-fluid mb-2 mx-auto d-block"  alt="Word"><div>Word</div>
+        </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+        <div class="card text-center p-3 hover-effect">
+            <img src="https://img.icons8.com/color/48/ms-excel.png" class="img-fluid mb-2 mx-auto d-block" alt="Excel"><div>Excel</div>
+        </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+        <div class="card text-center p-3 hover-effect">
+            <img src="https://img.icons8.com/color/48/ms-powerpoint.png" class="img-fluid mb-2 mx-auto d-block"  alt="PowerPoint"><div>PowerPoint</div>
+        </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+        <div class="card text-center p-3 hover-effect">
+            <img src="https://img.icons8.com/fluency/48/new-post.png" class="img-fluid mb-2 mx-auto d-block" alt="Outlook"><div>Outlook</div>
+        </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+        <div class="card text-center p-3 hover-effect">
+            <img src="https://img.icons8.com/?size=100&id=PnENrLMMW4eV&format=png&color=000000" class="img-fluid mb-2 mx-auto d-block"  alt="OneDrive"><div>OneDrive</div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end mt-3 mb-4"><a href="#" class="text-decoration-none  text-danger fw-semibold">All apps →</a></div>
+
+  <!-- Previously Added Section -->
+  <h5 class="section-title mt-4 mb-3">Previously added</h5>
+  <div class="row g-3">
+        <div class="col-6 col-md-4 ">
+        <div class="card-prev p-3 hover-effect d-flex align-items-center gap-2">
+            <img src="https://img.icons8.com/color/48/source-code.png" class="img-fluid " alt="App Studio"><div>App Studio</div>
+        </div>
+        </div>
+        <div class="col-6 col-md-4 ">
+        <div class="card-prev  p-3 hover-effect d-flex align-items-center gap-2">
+            <img src="https://img.icons8.com/color/48/lock--v1.png" class="img-fluid "  alt="Assignments"><div>Assignments</div>
+        </div>
+        </div>
+        <div class="col-6 col-md-4 ">
+        <div class="card-prev  p-3 hover-effect d-flex align-items-center gap-2">
+            <img src="https://img.icons8.com/color/48/ms-excel.png" class="img-fluid mb-2" alt="Excel"><div>Excel</div>
+        </div>
+        </div>
+        <div class="col-6 col-md-4 ">
+        <div class="card-prev p-3 hover-effect d-flex align-items-center gap-2">
+            <img src="https://img.icons8.com/?size=100&id=qYfwpsRXEcpc&format=png&color=000000" class="img-fluid "  alt="Power BI"><div>Power BI</div>
+        </div>
+        </div>
+        <div class="col-6 col-md-4 ">
+        <div class="card-prev  p-3 hover-effect d-flex align-items-center gap-2">
+            <img src="https://img.icons8.com/color/48/ms-powerpoint.png" class="img-fluid " alt="PowerPoint"><div>PowerPoint</div>
+        </div>
+        </div>
+        <div class="col-6 col-md-4">
+        <div class="card-prev p-3 hover-effect active d-flex align-items-center gap-2">
+            <img src="https://img.icons8.com/?size=100&id=jzaaE6lUq9fx&format=png&color=000000" class="img-fluid"  alt="Task Module"><div>Task Module Sample →</div>
+        </div>
+        </div>
+        <div class="col-6 col-md-4 ">
+        <div class="card-prev p-3 hover-effect d-flex align-items-center gap-2">
+            <img src="https://img.icons8.com/color/48/ms-word.png" class="img-fluid "  alt="Word"><div>Word</div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row g-2">
+        <div class="col-12 col-md-6 col-lg-auto"><button class="btn btn-dark rounded-pill w-100">Productivity</button></div>
+        <div class="col-12 col-md-6 col-lg-auto"><button class="btn btn-outline-dark rounded-pill w-100">Utilities</button></div>
+        <div class="col-12 col-md-6 col-lg-auto"><button class="btn btn-outline-dark rounded-pill w-100">Education</button></div>
+        <div class="col-12 col-md-6 col-lg-auto"><button class="btn btn-outline-dark rounded-pill w-100">4 more</button></div>
+        </div>
+    </div>
+    </main>
 </div>
 </div>
-</main>
-</div>
+  <!-- Button Group -->
+    <div class="d-flex justify-content-end gap-2 p-3 mt-auto">
+        <button class="btn btn-dark"><i data-lucide="message-circle"></i> Feedback</button>
+        <button class="btn btn-primary"><i data-lucide="help-circle"></i> Need help?</button>
+    </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>lucide.createIcons()</script>
 </body>
 </html>
-
