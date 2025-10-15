@@ -1,0 +1,75 @@
+body { 
+  margin: 0; 
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.sidebar { 
+  width: 100px; 
+  background: #eee;
+  gap: 8px;
+  padding-top: 16px ;
+  overflow-y: auto;
+  scrollbar-width: none;
+  flex-shrink: 0;
+}
+
+.sidebar img {
+  width: 24px;
+  height: 24px;
+}
+.main-wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.navbar {
+  min-height: 70px; 
+  background: #eee;
+  padding: 16px;
+}
+
+.info-banner { 
+  background: linear-gradient(to right, #fef3f3, #f8f9ff);
+  padding: 16px;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.info-banner img { 
+  width: 28px; 
+  height: 28px;
+}
+
+.info-banner .learn-more { 
+  color: #d83b01; 
+  font-weight: 500;
+}
+
+.main-content {
+  padding: 24px;
+}
+
+.img-fluid { 
+  width: 48px;
+  height: 48px;
+}
+.btn-equal {
+    min-width: 130px;
+}
+.card-prev {
+  border: none;
+}
+
+.card-prev.active { 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.hover-effect:hover { 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+  transform: translateY(-4px);
+}
+.section-title { 
+  font-weight: 600;
+  margin:0;
+}
