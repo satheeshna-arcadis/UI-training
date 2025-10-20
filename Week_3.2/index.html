@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>365 Clone - Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="flex h-screen font-sans text-gray-800 overflow-hidden">
+  <!-- Sidebar -->
+  <div class="flex flex-col items-center gap-4 overflow-y-auto no-scrollbar bg-gray-100 py-4 flex-shrink-0">
+    <div class="flex flex-col items-center hover:bg-gray-200 p-2 ">
+      <i data-lucide="grid" class="w-5 h-5"></i>
+      <small class="text-xs">All apps</small>
+    </div>
+    <div class="flex flex-col items-center hover:bg-gray-200 p-2 ">
+      <i data-lucide="home" class="w-5 h-5"></i>
+      <small class="text-xs">Home</small>
+    </div>
+    <div class="flex flex-col items-center hover:bg-gray-200 p-2 ">
+      <i data-lucide="plus-circle" class="w-5 h-5"></i>
+      <small class="text-xs">Create</small>
+    </div>
+    <div class="flex flex-col items-center hover:bg-gray-200 p-2 ">
+      <i data-lucide="folder" class="w-5 h-5"></i>
+      <small class="text-xs">My Files</small>
+    </div>
+    <div class="flex flex-col items-center hover:bg-gray-200 p-2 ">
+      <img src="https://img.icons8.com/color/48/new-post.png" class="w-6 h-6" alt="Outlook">
+      <small class="text-xs">Outlook</small>
+    </div>
+    <div class="flex flex-col items-center hover:bg-gray-200 p-2 ">
+      <img src="https://img.icons8.com/color/48/microsoft-teams.png" class="w-6 h-6" alt="Teams">
+      <small class="text-xs">Teams</small>
+    </div>
+    <div class="flex flex-col items-center hover:bg-gray-200 p-2 ">
+      <img src="https://img.icons8.com/color/48/ms-word.png" class="w-6 h-6" alt="Word">
+      <small class="text-xs">Word</small>
+    </div>
+    <div class="flex flex-col items-center hover:bg-gray-200 p-2 ">
+      <img src="https://img.icons8.com/color/48/ms-excel.png" class="w-6 h-6" alt="Excel">
+      <small class="text-xs">Excel</small>
+    </div>
+    <div class="flex flex-col items-center hover:bg-gray-200 p-2 ">
+      <img src="https://img.icons8.com/color/48/ms-powerpoint.png" class="w-6 h-6" alt="PowerPoint">
+      <small class="text-xs">PowerPoint</small>
+    </div>
+    <div class="flex flex-col items-center hover:bg-gray-200 p-2 ">
+      <img src="https://img.icons8.com/?size=100&id=PnENrLMMW4eV&format=png" class="w-6 h-6" alt="OneDrive">
+      <small class="text-xs">OneDrive</small>
+    </div>
+    <div class="flex flex-col items-center hover:bg-gray-200 p-2 ">
+      <img src="https://img.icons8.com/?size=100&id=JNZqbHmBWZLU&format=png" class="w-6 h-6" alt="OneNote">
+      <small class="text-xs">OneNote</small>
+    </div>
+    <div class="flex flex-col items-center hover:bg-gray-200 p-2 ">
+      <i data-lucide="more-horizontal" class="w-5 h-5"></i>
+      <small class="text-xs">More</small>
+    </div>
+  </div>
+  <!-- Main Content -->
+  <div class="flex flex-col flex-grow overflow-hidden">
+    <!-- Topbar -->
+    <nav class="flex items-center justify-between bg-gray-100 px-4 py-5 flex-shrink-0">
+      <div class="flex items-center gap-4 w-full">
+        <span class="text-red-600 font-semibold text-lg">Microsoft 365</span>
+        <div class="hidden md:flex flex-grow max-w-xl">
+          <div class="flex items-center w-full px-2 py-1 bg-white ">
+            <i data-lucide="search" class="w-5 h-5 text-gray-500"></i>
+            <input type="text" placeholder="Search"
+              class="flex-grow px-2 text-sm bg-transparent">
+          </div>
+        </div>
+        <div class="flex md:hidden flex-grow justify-center"><i data-lucide="search" class="w-5 h-5"></i></div>
+        <div class="flex items-center gap-4 ms-auto">
+          <i data-lucide="calendar-check-2" class="w-5 h-5"></i>
+          <i data-lucide="settings" class="w-5 h-5"></i>
+          <i data-lucide="help-circle" class="w-5 h-5"></i>
+          <i data-lucide="user" class="w-5 h-5"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="flex-1 overflow-y-auto">
+      <!-- Info Banner -->
+        <div class="bg-gradient-to-r from-rose-50 to-indigo-50 px-4 py-3 flex items-center flex-wrap relative">
+          <div class="flex items-center gap-2 flex-grow flex-wrap">
+            <img src="https://img.icons8.com/color/32/microsoft-office-2019.png" class="w-7 h-7" alt="Office">
+            <i data-lucide="arrow-right" class="w-6 h-6"></i>
+            <img src="https://img.icons8.com/?size=100&id=g7UKWvv49CoI&format=png" class="w-7 h-7" alt="Microsoft 365">
+            <span class="text-sm ms-2 flex-grow">
+            The Office app is becoming the new Microsoft 365 app, your home to find, create, and share your content and ideas.
+            <a href="#" class="text-orange-600 underline font-medium">Learn more</a>
+            </span>
+          </div>
+          <button class="ml-auto"><i data-lucide="x" class="w-5 h-5"></i></button>
+        </div>
+      <!-- Main Section -->
+      <main class=" p-6 space-y-8">
+        <!-- Apps -->
+        <div class="flex justify-between items-center">
+          <h5 class="font-semibold text-lg">Apps</h5>
+          <button class="bg-red-600 text-white flex items-center px-3 py-2 rounded-md text-sm">
+            <i data-lucide="plus-circle" class="w-4 h-4 me-1"></i> Add apps
+          </button>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div class="text-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <img src="https://img.icons8.com/color/48/microsoft-teams.png" class="w-12 h-12 mx-auto mb-2" alt="Teams">
+            <div>Teams</div>
+          </div>
+          <div class="text-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <img src="https://img.icons8.com/color/48/ms-word.png" class="w-12 h-12 mx-auto mb-2" alt="Word">
+            <div>Word</div>
+          </div>
+          <div class="text-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <img src="https://img.icons8.com/color/48/ms-excel.png" class="w-12 h-12 mx-auto mb-2" alt="Excel">
+            <div>Excel</div>
+          </div>
+          <div class="text-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <img src="https://img.icons8.com/color/48/ms-powerpoint.png" class="w-12 h-12 mx-auto mb-2" alt="PowerPoint">
+            <div>PowerPoint</div>
+          </div>
+          <div class="text-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <img src="https://img.icons8.com/fluency/48/new-post.png" class="w-12 h-12 mx-auto mb-2" alt="Outlook">
+            <div>Outlook</div>
+          </div>
+          <div class="text-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition">
+            <img src="https://img.icons8.com/?size=100&id=PnENrLMMW4eV&format=png" class="w-12 h-12 mx-auto mb-2"
+              alt="OneDrive">
+            <div>OneDrive</div>
+          </div>
+        </div>
+        <div class="flex justify-end">
+          <a href="#" class="text-red-600 font-semibold text-sm">All apps →</a>
+        </div>
+        <!-- Previously Added -->
+        <h5 class="font-semibold text-lg">Previously added</h5>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div class="flex items-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+            <img src="https://img.icons8.com/color/48/source-code.png" class="w-10 h-10" alt="App Studio">
+            <div>App Studio</div>
+          </div>
+          <div class="flex items-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+            <img src="https://img.icons8.com/color/48/lock--v1.png" class="w-10 h-10" alt="Assignments">
+            <div>Assignments</div>
+          </div>
+          <div class="flex items-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+            <img src="https://img.icons8.com/color/48/ms-excel.png" class="w-10 h-10" alt="Excel">
+            <div>Excel</div>
+          </div>
+          <div class="flex items-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+            <img src="https://img.icons8.com/?size=100&id=qYfwpsRXEcpc&format=png" class="w-10 h-10" alt="Power BI">
+            <div>Power BI</div>
+          </div>
+          <div class="flex items-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+            <img src="https://img.icons8.com/color/48/ms-powerpoint.png" class="w-10 h-10" alt="PowerPoint">
+            <div>PowerPoint</div>
+          </div>
+          <div class="flex items-center gap-2 p-3 bg-white rounded-lg shadow-md border border-gray-200">
+            <img src="https://img.icons8.com/?size=100&id=jzaaE6lUq9fx&format=png" class="w-10 h-10" alt="Task Module">
+            <div>Task Module Sample →</div>
+          </div>
+          <div class="flex items-center gap-2 p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition">
+            <img src="https://img.icons8.com/color/48/ms-word.png" class="w-10 h-10" alt="Word">
+            <div>Word</div>
+          </div>
+        </div>
+        <!-- Buttons -->
+        <div class="flex flex-wrap gap-3">
+          <button class="bg-gray-900 text-white px-5 py-2 rounded-full text-sm">Productivity</button>
+          <button class="border border-gray-900  px-5 py-2 rounded-full text-sm hover:bg-black hover:text-white transition">Utilities</button>
+          <button class="border border-gray-900 px-5 py-2 rounded-full text-sm  hover:bg-black hover:text-white transition">Education</button>
+          <button class="border border-gray-900 px-5 py-2 rounded-full text-sm  hover:bg-black hover:text-white transition">4 more</button>
+        </div>
+        <!-- Bottom Buttons -->
+        <div class="flex  gap-3 px-4 py-4 justify-end">
+          <button class="bg-gray-800 text-white px-4 py-2 rounded-lg flex items-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Feedback
+          </button>
+          <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center gap-2">
+            <i data-lucide="help-circle" class="w-4 h-4"></i> Need help?
+          </button>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script>lucide.createIcons()</script>
+</body>
+</html>
