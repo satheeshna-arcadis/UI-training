@@ -1,5 +1,4 @@
 import React from 'react'
-import { Grid, Home, PlusCircle, Folder, MoreHorizontal } from 'lucide-react';
 
 const sidebar = () => {
     return (
@@ -8,13 +7,13 @@ const sidebar = () => {
                 <li>
                     <button
                         className="flex flex-col items-center hover:bg-gray-200 p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500" type="button" aria-label="View all apps">
-                        <Grid className="w-5 h-5" aria-hidden="true" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-grid3x3-icon lucide-grid-3x3"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M3 15h18"/><path d="M9 3v18"/><path d="M15 3v18"/></svg>
                         <span className="text-xs">All apps</span>
                     </button>
                 </li>
                 <li><button className="flex flex-col items-center hover:bg-gray-200 p-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
                     type="button" aria-label="Go to home">
-                    <Home className="w-5 h-5" aria-hidden="true" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
                     <span className="text-xs">Home</span>
                 </button>
                 </li>
@@ -24,7 +23,7 @@ const sidebar = () => {
                         type="button"
                         aria-label="Create new content"
                     >
-                        <PlusCircle className="w-5 h-5" aria-hidden="true" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-plus-icon lucide-circle-plus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
                         <span className="text-xs">Create</span>
                     </button>
                 </li>
@@ -34,7 +33,7 @@ const sidebar = () => {
                         type="button"
                         aria-label="Access my files"
                     >
-                        <Folder className="w-5 h-5" aria-hidden="true" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder-icon lucide-folder"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
                         <span className="text-xs">My Files</span>
                     </button>
                 </li>
@@ -81,8 +80,7 @@ const sidebar = () => {
                 </li>
                 <li>
                     <button className="flex flex-col items-center hover:bg-gray-200 p-2 " type="button" aria-label="More options">
-                        <MoreHorizontal className="w-5 h-5" aria-hidden="true" />
-                        <span className="text-xs">More</span></button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-icon lucide-ellipsis"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>                        <span className="text-xs">More</span></button>
                 </li>
             </ul>
         </nav>
