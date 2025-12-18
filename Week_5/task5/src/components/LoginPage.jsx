@@ -5,7 +5,7 @@ const LoginPage = () => {
   return (
     <div className="lpWrapper">
       <div className="lpCard">
-        <h1 className="Brand">DFW Operating Authority Online Portal(DEV)</h1>
+        <h1 className="companyTitle">DFW Operating Authority Online Portal(DEV)</h1>
         <form className="lpFormBody" >
            <h1 className="lpHeading">Create New Account</h1> 
             <div className="lpInputGroup">
