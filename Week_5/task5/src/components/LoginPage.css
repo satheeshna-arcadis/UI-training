@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.lpWrapper {
+.loginPageWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,64 +15,66 @@
 }
 .companyTitle {
     color: #2464E4;
-    font-size: 24px;
-    font-family: poppins;
-    font-weight: 800;
+    font-size: 21px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
 }
 
-.lpFormBody {
+.loginPageFormBody {
     display: flex;
     gap: 14px;
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
 }
-.lpCard {
+.loginPageCard {
     width: 600px;
-    height: 582px;
+    /* height: 560px; */
     padding: 40px;
     gap: 32px;
     border-radius: 24px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     border: 1px solid #F3F4F6;
     background: #FFF;
     box-shadow: 0 16px 32px rgba(36, 100, 228, 0.2);
 }
 
-.lpHeading {
-    letter-spacing: -0.56px;
+.loginPageHeading {
+    letter-spacing: 0px;
     color: #1F2937;
     font-size: 20px;
     font-weight: 600;
 }
 
-.lpInputGroup {
+.loginPageInputGroup {
     display: flex;
     flex-direction: column;
     gap: 8px;
     width: 100%;
 }
-.lpLabel {
+.loginPageLabel {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     color: #374151;
+    font-family: 'Poppins', sans-serif;
 }
-.lpRequired {
+.loginPageRequired {
     margin-left: 4px;
     color: #DC2626;
 }
 
-.lpInputField {
+.loginPageInputField {
     width: 100%;
     padding: 8px 10px;
     border: 1px solid #D1D5DB;
     border-radius: 6px;
     font-size: 14px;
     outline: none;
+
 }
-.lpButtonCon {
+.loginPageButtonCon {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -80,31 +82,33 @@
     margin-top: 40px;
 }
 
-.lpSubmitBtn {
+.loginPageSubmitBtn {
     background-color: #2464E4;
     color: white;
-    padding: 4px 20px;
+    padding: 6px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.lpBtnOutline {
+.loginPageBtnOutline {
     background-color: white;
     color: #2464E4;
-    padding: 4px 20px;
+    padding: 6px 20px;
     border: 1px solid #2464E4;
-    border-radius: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
 @media (max-width: 640px) {
-    .lpCard {
+    .loginPageCard {
         width: 90%;
         gap: 14px;
         height: 510px;
     }
 
-    .lpHeading {
+    .loginPageHeading {
         font-size: 16px;
     }
 
@@ -112,19 +116,19 @@
         font-size: 18px;
     }
 
-    .lpButtonCon {
+    .loginPageButtonCon {
         margin-top: 20px;
     }
 
-    .lpBtnOutline,
-    .lpSubmitBtn {
+    .loginPageBtnOutline,
+    .loginPageSubmitBtn {
         padding: 6px 14px;
         font-size: 12px;
     }
 }
 
 @media (max-width: 344px) {
-    .lpCard {
+    .loginPageCard {
         padding: 20px;
     }
 }

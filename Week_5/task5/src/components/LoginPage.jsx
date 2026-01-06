@@ -3,34 +3,34 @@ import './LoginPage.css'
 
 const LoginPage = () => {
   return (
-    <div className="lpWrapper">
-      <div className="lpCard">
+    <div className="loginPageWrapper">
+      <div className="loginPageCard">
         <h1 className="companyTitle">DFW Operating Authority Online Portal(DEV)</h1>
-        <form className="lpFormBody" >
-           <h1 className="lpHeading">Create New Account</h1> 
-            <div className="lpInputGroup">
-              <label htmlFor="firstname" className="lpLabel">First Name<span className="lpRequired">*</span></label>
-              <input type="text" id="firstname" className="lpInputField" placeholder="Enter First Name"/>
+        <form className="loginPageFormBody" >
+           <h1 className="loginPageHeading">Create New Account</h1> 
+            <div className="loginPageInputGroup">
+              <label htmlFor="firstname" className="loginPageLabel">First Name<span className="loginPageRequired">*</span></label>
+              <input type="text" id="firstname" className="loginPageInputField" placeholder="Enter First Name"/>
             </div>
 
-            <div className="lpInputGroup">
-              <label htmlFor="lastname" className="lpLabel">Last Name<span className="lpRequired">*</span></label>
-              <input type="text" id="lastname" className="lpInputField" placeholder="Enter Last Name"/>
+            <div className="loginPageInputGroup">
+              <label htmlFor="lastname" className="loginPageLabel">Last Name<span className="loginPageRequired">*</span></label>
+              <input type="text" id="lastname" className="loginPageInputField" placeholder="Enter Last Name"/>
             </div>
 
-            <div className="lpInputGroup">
-              <label htmlFor="title" className="lpLabel"> Title<span className="lpRequired">*</span></label>
-              <input type="text" id="title" className="lpInputField" placeholder="Enter Title"/>
+            <div className="loginPageInputGroup">
+              <label htmlFor="title" className="loginPageLabel"> Title<span className="loginPageRequired">*</span></label>
+              <input type="text" id="title" className="loginPageInputField" placeholder="Enter Title"/>
             </div>
 
-            <div className="lpInputGroup">
-              <label htmlFor="email" className="lpLabel">Email<span className="lpRequired">*</span></label>
-              <input type="email" id="email" className="lpInputField" placeholder="Enter Email"/>
+            <div className="loginPageInputGroup">
+              <label htmlFor="email" className="loginPageLabel">Email<span className="loginPageRequired">*</span></label>
+              <input type="email" id="email" className="loginPageInputField" placeholder="Enter Email"/>
             </div>
             
-          <div className="lpButtonCon"> 
-            <button type="button" className="lpBtnOutline">Cancel</button>
-            <button type="submit" className="lpSubmitBtn"> Submit</button>
+          <div className="loginPageButtonCon"> 
+            <button type="button" className="loginPageBtnOutline">Cancel</button>
+            <button type="submit" className="loginPageSubmitBtn"> Submit</button>
           </div>
         </form>
       </div>
